@@ -1,0 +1,2 @@
+- For the data generator when importing images, does it matter what the 'target_size' variable is
+- Similarily, does it matter what the 'batch_size' is?
