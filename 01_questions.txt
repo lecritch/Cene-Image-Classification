@@ -1,2 +1,2 @@
 - For the data generator when importing images, does it matter what the 'target_size' variable is
-- Similarily, does it matter what the 'batch_size' is?
+- Similarily, does it matter what the 'batch_size' is?  How do I determine this?  Does the batch size for train, test, val need to be different?
