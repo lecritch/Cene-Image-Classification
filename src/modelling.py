@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-parent_dir = '../'
+parent_dir = '../../'
 
 def visualize_training_results(results):
     """
@@ -14,7 +14,6 @@ def visualize_training_results(results):
     plt.title('Loss')
     plt.xlabel('Epochs')
     plt.ylabel('Loss')
-    plt.savefig(parent_dir + 'figures/model_loss')
     plt.show();
     
     plt.figure(figsize = (10, 8))
@@ -24,5 +23,4 @@ def visualize_training_results(results):
     plt.title('Accuracy')
     plt.xlabel('Epochs')
     plt.ylabel('Accuracy')
-    plt.savefig(parent_dir + 'figures/model_accuracy')
     plt.show();
