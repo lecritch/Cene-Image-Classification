@@ -1,3 +1,8 @@
+Week 1
 - For the data generator when importing images, does it matter what the 'target_size' variable is
 - Similarily, does it matter what the 'batch_size' is?  How do I determine this?  Does the batch size for train, test, val need to be different?
 - Calling predict on my model 2, I'm not sure how to see which images correspond to the predictions - how do I extract the images once I've done the reshaping for the modelling?
+
+Week 2
+Monday:
+- Justifying model layers and parameters.  e.g. CNN - why con2d and maxpool layer alternating etc - what is the expectation with this justification?
