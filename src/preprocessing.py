@@ -4,6 +4,14 @@ from keras.preprocessing import image
 from PIL import Image
 
 def get_paths(directory):
+    """
+    This function creates a list of paths to all images in a given directory (train, test for e.g.)
+    
+    directory (str):  a string of the directory to get the class and image paths from 
+    
+    Author:  Chum Mapa
+    Date:  2020
+    """
     buildings_list = os.listdir(directory + '/buildings')
     forest_list = os.listdir(directory + '/forest')
     glacier_list = os.listdir(directory + '/glacier')
@@ -24,6 +32,16 @@ def get_paths(directory):
 
 
 def preprocess_image(path_list):
+    """
+    This function performs preprocessing tasks in order to 
+    get a list of images ready for input into a lime visualisation 
+    
+    path_list (str):  a list of strings of paths to individual images
+    
+    Author:  @marcotcr (github)
+    Date:  2020 
+    Link:  https://github.com/marcotcr/lime/blob/master/doc/notebooks/Tutorial%20-%20Image%20Classification%20Keras.ipynb
+    """
     output = []
     for img_path in path_list:
         img = image.load_img(img_path, target_size=(299, 299))

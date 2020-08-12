@@ -1,7 +1,8 @@
 import matplotlib.pyplot as plt
 PARENT_DIR = '../'
 
-# plot params:
+# plot params:  copy these parameters over to your notebooks as you see fit
+# these are just params I like to use
 plt.rcParams['axes.edgecolor'] = 'white'
 plt.rcParams['axes.titlesize'] = 20
 plt.rcParams['axes.labelsize'] = 18
