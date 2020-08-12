@@ -50,3 +50,5 @@ The file structure of the data directory in this repo and used for modeling thro
 The training set (and thus, validation set) classes were fairly balanced.  We can visualize this as follows:
 
 ![class balance bar graph](figures/num_imgs_per_scene.png)
+
+We see from this bar graph that we have relatively balanced classes with the mountain class containing the highest number of images and sea class containing the least.
