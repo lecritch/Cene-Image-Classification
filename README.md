@@ -143,7 +143,7 @@ Here are a few example images from each class:
 |Buildings	|Forest	|Glacier|Mountain|Sea|Street|
 |---	|---	|---	|---	|---	|---    |
 |![building](figures/10176.jpg)|![forest](figures/10186.jpg)|![glacier](figures/10256.jpg)|![mountain](figures/11023.jpg)|![sea](figures/10420.jpg)|![street](figures/10112.jpg)
-|
+
 
 As you can see, not all images are color (although the vast majority happen to be) and there are some unique augmentations to some images as you can see here with the sea image.  One tricky thing about this classification will be getting our model to distinguish between buildings and streets, given that there are usually buildings in the street images and also distinguishing between glaciers and mountains, since these also often look similar.  
 
