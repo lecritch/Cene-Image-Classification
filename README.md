@@ -176,6 +176,14 @@ The training set (and thus, validation set) classes were fairly balanced.  We ca
 
 We see from this bar graph that we have relatively balanced classes with the mountain class containing the highest number of images and sea class containing the least.
 
+## Model Evaluations and Next Steps
+
+The models created in the final notebook report are definitely not the best performing models - we can do better.  Due to time constraints and the extended time it took to run later models, I did not have the chance to apply transfer learning as planned.  Future iterations will definitely include this.  Due to overfitting still being present in the model, I will also experiment with other regularization techniques such as L1 and L2 regularization. 
+
+Throughout my model iterations and experiments, the best results I have seen so far were from the model I created in [this notebook](notebooks/modelling/04_modelling.ipynb).  This model performed the best so far with a training accuracy of 0.9191 and validation accuracy of 0.8237.  While the model is still overfitting it is the least amount of overfitting we have seen so far in our modelling.  The validation loss is still erratic in its behaviour and does not show signs of convergence yet.  Investigations into why this is happening and if there is any further data manipulation I could perform will be my next step.  This model was not included in this notebook as I it took 7 hours to run and could not reproduce it in this notebook without rerunning it.  The model has been saved though which you can see in the above-linked notebook.  
+
+Once a model is developed that meets at least 85% accuracy and little to no overfitting, deployment will be the next phase of this project.  I may to create a web application to sort input photos given to the model.  
+
 ## Future Developments
 
 The next stages of this project will include further model improvement as well as deployment.  As it stands, our resulting model of this project could still be improved further.  To do this, we will employ transfer learning methods to benefit from models that are already trained on significant datasets.  
