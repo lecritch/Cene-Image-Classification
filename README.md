@@ -68,7 +68,13 @@ Below you'll find the structure of this repository.  Folders marked in `<directo
 
 ### Conda Environment
 
-Provided in this repo is a `.yml` file which includes the environment used to produce the results in this project.  For instructions on how to create an environment from a `.yml` file, please see the link [here](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file)
+Provided in this repo is a `.yml` file which includes the environment used to produce the results in this project.  In your terminal, run the following commands:
+
+> `! conda env create -f environment.yml`
+
+> `! conda activate cap-env`
+
+For more details and trouble shooting on how to create an environment from a `.yml` file, please see the link [here](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file)
 
 ### Getting the Data
 
