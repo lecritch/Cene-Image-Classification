@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Cene
+{% endblock %}
+
+{% block content %}
+
+<h1>Cene - Image Organisation</h1>
+
+<div>
+    {% for image in images %}
+    <img src="{{ image }}" />
+    {% endfor %}
+</div>
+
+<div>
+   <input class="button" type="submit" value="Sort Photos">
+</div>
+
+{% endblock %}
+
+

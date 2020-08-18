@@ -50,3 +50,4 @@ def preprocess_image(path_list):
         x = np.divide(x, 255.0)
         output.append(x)
     return np.vstack(output)
+
