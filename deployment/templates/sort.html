@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Your Albums
+{% endblock %}
+
+{% block content %}
+
+<h1>Cene</h1>
+<h2>Your Albums</h2>
+
+<div>
+    <h3>Buildings</h3>
+    {% for image in BUILDING_images %}
+    <img src="{{ image }}" />
+    {% endfor %}
+</div>
+
+<div>
+    <h3>Forests</h3>
+    {% for image in FOREST_images %}
+    <img src="{{ image }}" />
+    {% endfor %}
+</div>
+
+<div>
+    <h3>Glaciers</h3>
+    {% for image in GLACIER_images %}
+    <img src="{{ image }}" />
+    {% endfor %}
+</div>
+
+<div>
+    <h3>Mountains</h3>
+    {% for image in MOUNTAIN_images %}
+    <img src="{{ image }}" />
+    {% endfor %}
+</div>
+
+<div>
+    <h3>Seas</h3>
+    {% for image in SEA_images %}
+    <img src="{{ image }}" />
+    {% endfor %}
+</div>
+
+<div>
+    <h3>Streets</h3>
+    {% for image in STREET_images %}
+    <img src="{{ image }}" />
+    {% endfor %}
+</div>
+
+{% endblock %}
