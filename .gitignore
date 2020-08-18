@@ -135,3 +135,5 @@ data/
 models/
 
 .DS_Store
+
+.idea/
