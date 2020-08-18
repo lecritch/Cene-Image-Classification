@@ -1,4 +1,6 @@
 import matplotlib.pyplot as plt
+from sklearn.metrics import confusion_matrix, accuracy_score, precision_score, recall_score
+import seaborn as sns
 PARENT_DIR = '../'
 
 # plot params:  copy these parameters over to your notebooks as you see fit
@@ -41,3 +43,28 @@ def loss_acc_vis(results, title, save_as = 'figures/model'):
     plt.yticks(fontsize = 20)
     plt.savefig(PARENT_DIR + f'{save_as}_accuracy')
     plt.show();
+    
+
+def evaluation(y, y_hat, title = 'Confusion Matrix', test_gen = test_gen):
+    '''takes in true values and predicted values.
+    The function then prints out a classifcation report
+    as well as a confusion matrix using seaborn's heatmap.'''
+    cm = confusion_matrix(y, y_hat)
+    accuracy = accuracy_score(y,y_hat)
+    print('Accuracy: ', accuracy)
+    plt.subplots(figsize = (15, 10))
+    sns.heatmap(cm,  cmap= 'Blues', annot=True, fmt='d')
+    plt.xticks(ticks = list(test_gen.class_indices.values()), labels = list(test_gen.class_indices.keys()), 
+               rotation = 45, fontsize = 15)
+    plt.yticks(ticks = list(test_gen.class_indices.values()), labels = list(test_gen.class_indices.keys()),
+               rotation = 45, fontsize = 15)
+    plt.xlabel('Predicted', fontsize = 18)
+    plt.ylabel('Actual', fontsize = 18)
+    plt.title(title, fontize = 22)
+    plt.show()
+    
+    
+
+
+
+

@@ -1,0 +1,3 @@
+- getting predictions for unlabeled images
+- accuracy score being really low from first time?
+- getting the item associated with the prediction (image file path)
