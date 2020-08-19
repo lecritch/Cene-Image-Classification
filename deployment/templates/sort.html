@@ -9,12 +9,25 @@ Your Albums
 <h1>Cene</h1>
 <h2>Your Albums</h2>
 
+{% for key in image_preds %}
 <div>
-    <h3>Buildings</h3>
-    {% for image in BUILDING_images %}
-    <img src="{{ image }}" />
+    <div>
+        <h3>{{ key }}</h3>
+    </div>
+    {% for image in image_preds[key] %}
+        <img src="{{ image }}" />
     {% endfor %}
 </div>
+{% endfor %}
+
+{% endblock %}
+
+
+
+
+
+
+# graveyard
 
 <div>
     <h3>Forests</h3>
@@ -51,4 +64,4 @@ Your Albums
     {% endfor %}
 </div>
 
-{% endblock %}
+
