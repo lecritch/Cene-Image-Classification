@@ -3,7 +3,7 @@ import os
 import random
 import pickle
 
-demo_images = os.listdir('static/images/imgs/')
+demo_images = list(filter(lambda x: '.jpg' in x, os.listdir('static/images/imgs/')))
 
 with open('predictions/demo_preds.pickle', 'rb') as f:
     predictions = pickle.load(f)
