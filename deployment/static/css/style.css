@@ -1,0 +1,129 @@
+/* start globals */
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+footer {
+    display: block;
+    position: relative;
+    background-color: #FAFAFA;
+    padding: 20px;
+    margin-top: 100px;
+    color: #AAA;
+    border-top: 1px solid #DDD;
+}
+
+footer .title {
+    font-size: 0.75em;
+    margin: 5px;
+}
+
+footer .subtitle {
+    font-size: 0.5em;
+    margin: 5px;
+}
+
+footer a {
+    color: #888;
+    text-decoration: none;
+    font-weight: bold;`
+}
+
+/* end globals */
+
+/* start nav */
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+nav .nav-left a {
+    color: black;
+    font-weight: bold;
+    font-size: 1.5em;
+    font-style: italic;
+    text-decoration: none;
+}
+
+nav .nav-right form {
+    margin: 0;
+}
+
+nav .nav-right .button {
+    background-color: black;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: 0.6em;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+nav h1 {
+    margin: 0;
+}
+
+.nav-margin {
+    margin-bottom: 90px;
+}
+
+/* end nav */
+
+
+.img-mosaic {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+.img-tile {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 3px;
+    box-shadow: 1px 2px 5px #AAA;
+    transition: 0.5s ease;
+}
+
+.img-tile:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 0.5s easeOutSine;
+}
+
+.img-title-tile {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-title-tile div {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: bold;
+    font-variant: small-caps;
+    text-transform: uppercase;
+}
+
+a.github-fork-ribbon.right-bottom.fixed:before {
+    background-color: black;
+}

@@ -6,16 +6,21 @@ Your Albums
 
 {% block content %}
 
-<h1>Cene</h1>
-<h2>Your Albums</h2>
+<nav>
+    <div class="nav-left">
+        <a href="/">Cene</a>
+    </div>
+</nav>
+<div class="nav-margin"></div>
+
 
 {% for key in image_preds %}
-<div>
-    <div>
-        <h3>{{ key }}</h3>
+<div class="img-mosaic">
+    <div class="img-tile img-title-tile">
+        <div>{{ key }}</div>
     </div>
     {% for image in image_preds[key] %}
-        <img src="{{ image }}" />
+        <div class="img-tile" style="background-image: url({{image}})"></div>
     {% endfor %}
 </div>
 {% endfor %}

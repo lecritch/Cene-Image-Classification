@@ -1,14 +1,17 @@
 <html>
-<head>
-    <title>{% block title %} {% endblock %}</title>
-    <style>
-        body {
-            font-family: sans-serif;
-        }
-    </style>
-</head>
-<body>
-    {% block content %}
-    {% endblock %}
-</body>
+    <head>
+        <title>{% block title %} {% endblock %}</title>
+        <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
+    </head>
+    <body>
+        {% block content %}
+        {% endblock %}
+        <a class="github-fork-ribbon right-bottom fixed" href="https://github.com/lecritch/cene" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
+
+        <footer>
+            <div class="title">Cene &mdash; Image Organization</div>
+            <div class="subtitle">A project by Leana Critchell (<a href="https://github.com/lecritch">Github</a>)</div>
+        </footer>
+    </body>
 </html>
