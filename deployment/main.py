@@ -2,6 +2,7 @@ from flask import Flask, render_template, url_for
 import os
 import random
 import pickle
+import time
 
 demo_images = list(filter(lambda x: '.jpg' in x, os.listdir('static/images/imgs/')))
 
@@ -19,6 +20,7 @@ def home():
 
 @app.route("/sort", methods=['POST'])
 def sort():
+    time.sleep(1)
     return render_template("sort.html", image_preds = predictions)
 
 
